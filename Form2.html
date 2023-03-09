@@ -1,0 +1,370 @@
+<!DOCTYPE html>  
+
+ 
+ 
+
+<html lang="en">  
+
+ 
+ 
+
+<head>  
+
+ 
+ 
+
+    <meta charset="UTF-8">  
+
+ 
+ 
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+
+ 
+ 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+ 
+ 
+
+    <title>Formulario 1</title>  
+
+ 
+ 
+
+</head>  
+
+ 
+ 
+
+<body>  
+
+ 
+ 
+
+    <h1 align="center">Tienda de ropa en linea</h1> 
+
+    <form>  
+
+ 
+ 
+
+        
+
+ 
+ 
+
+         <fieldset>  
+
+ 
+            <table width="80%" align="center"> 
+
+                <tr> 
+
+            <legend>Información del Cliente</legend>  
+
+ 
+ 
+                    <td>
+            <label for="Nombre">Nombre:</label>   
+
+ 
+            <br>
+
+            <input type="text" placeholder="Nombre" maxlength="10" name="nombre" id="nombre"/>  
+
+ 
+            </td>
+            <td>
+
+            <label for="AP">Apellido Paterno:</label>   
+
+ 
+ 
+
+            <input type="text" placeholder="Apellido paterno" maxlength="10" name="AP" id="AP"/>  
+
+ 
+            </td>
+            <td>
+
+            <label for="usuario">Apellido Materno:</label>   
+
+ 
+ 
+
+            <input type="text" placeholder="Apellido Materno" maxlength="10" name="AM" id="AM"/>  
+            </td>
+             </tr>
+             <tr>
+                <td>
+            <label for="usuario">Nombre de usuario:</label>   
+
+ 
+ 
+
+            <input type="text" placeholder="Usuario" maxlength="10" name="usuario" id="usuario"/>  
+
+                    </td>
+ 
+                    <td>
+            <label for="pass">Contraseña:</label>   
+
+ 
+ 
+
+            <input type="password" placeholder="Contraseña" maxlength="10" name="pass" id="pass"/>  
+            </td>
+                </tr> 
+             </table>
+
+        </fieldset>  
+
+       
+
+ 
+ 
+
+       <tr> 
+
+        <fieldset>  
+            <table width="80%" align="center">
+ 
+            <tr>
+
+            <legend>Datos de Facturación</legend>  
+
+ 
+ 
+                <td>
+            <label for="Calle">Calle:</label>   
+
+ 
+ 
+
+            <input type="text" placeholder="Calle" maxlength="10" name="calle" id="calle"/>  
+
+ 
+            </td>
+            <td>
+
+            <label for="Num">Numero Exterior:</label>   
+
+ 
+ 
+
+            <input type="text" placeholder="Numero Exterior" maxlength="10" name="Num" id="Num"/>  
+
+ 
+            </td>
+            <td>
+
+            <label for="Colonia">Colonia:</label>   
+
+ 
+ 
+
+            <input type="text" placeholder="Colonia" maxlength="10" name="Colonia" id="Colonia"/>  
+            </td>
+            </tr>
+            <tr>
+            <td>
+
+            <label for="email">E-mail:</label>   
+
+ 
+ 
+
+            <input type="text" placeholder="E-mail" maxlength="10" name="email" id="E-mail"/>  
+
+            </td>
+            <td>
+ 
+
+            <label for="CP">Codigo Postal:</label>   
+
+ 
+                
+
+            <input type="text" placeholder="Codigo Postal" maxlength="10" name="CP" id="CP"/>  
+
+ 
+            </td>
+            <td>
+            <label for="RFC">RFC:</label>   
+
+ 
+ 
+
+            <input type="text" placeholder="RFC" maxlength="10" name="RFC" id="RFC"/>  
+
+              </td>
+           
+                <td>
+            <label for="fecha">Fecha de Nacimiento:</label>  
+
+ 
+ 
+
+            <input type="date" id="fecha" name="fecha"/>  
+            </td>
+            </tr>
+ 
+            </table>
+
+        </fieldset>  
+
+ 
+ 
+
+       </tr> 
+
+       <tr> 
+
+        <fieldset>  
+
+            <table width="80%" align="center">
+                <tr>
+
+                
+            <legend>Datos del artículo adquirido</legend>  
+
+ 
+ 
+            <td>
+            <h3>Tipo</h3>  
+
+ 
+ 
+
+            <select name="" id="" size="7" multiple>  
+
+ 
+ 
+
+                <optgroup label="Alimentos">  
+
+ 
+ 
+
+                <option>Vestido</option>  
+
+ 
+ 
+
+                <option selected>Falda</option>  
+
+ 
+ 
+
+                <option>Pantalón</option>  
+
+ 
+ 
+
+                <option>Playera</option>  
+
+ 
+ 
+
+                <option>Camisa</option>  
+
+ 
+ 
+
+                  
+
+ 
+ 
+
+            </select>  
+
+            </td>
+            <td>
+ 
+
+            <h3>Talla</h3>  
+
+ 
+ 
+
+            <input type="radio" name="Chico" id="Chico"/>  
+
+ 
+ 
+
+            <label for="Chico">Chico</label>  
+
+ 
+ 
+
+  
+
+  
+
+ 
+ 
+
+            <input type="radio" name="Mediano" id="Mediano"/>  
+
+ 
+ 
+
+            <label for="Mediano">Mediano</label>  
+
+ 
+ 
+
+  
+
+  
+
+ 
+ 
+
+            <input type="radio" name="Grande" id="Grande"/>  
+
+ 
+ 
+
+            <label for="Grande">Grande</label>  
+
+          </td>
+            <td>
+
+            <label for="colores">Selecciona un color</label> 
+
+            <input type="color" name="colores" id="colores"/><br/> 
+             </td>
+                </tr>
+            </table>
+
+        </fieldset>  
+
+        
+
+ 
+ 
+
+            
+
+        
+
+    </form>  
+
+ 
+ 
+
+    <h5 align="right"> &copy; Distribuidora de ropa en línea</h5>  
+
+ 
+ 
+ 
+
+</body>  
+
+ 
+ 
+
+</html>  
