@@ -1,0 +1,68 @@
+/*Selector Universal*/
+*{
+    margin: 20px 20px ;
+}
+h2{color: rgb(49, 109, 89); 
+    font-size: 22px;
+    text-decoration: underline dotted;
+    text-align: center;
+    }
+    p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: papayawhip;
+    text-align: justify;
+    }
+    /*Referencia por ID*/
+    #titulo2{
+        color: rgb(42, 161, 165);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #texto2{
+        text-align: right;
+        text-decoration: underline solid;
+    }
+
+    /*Referencia por palabra clave*/
+    .titulo{
+        color: black;
+    }
+
+    p.titulo{
+        color: grey;
+    }
+
+    
+    p:first-child{
+        background-color: goldenrod;
+        color: white;
+    }
+    
+
+    p:last-child{
+        background-color: peru;
+        color: mediumslateblue;
+    }
+
+    table, th, td{
+        border-bottom: #071f61 1px solid;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+      
+    }
+    th{
+        height: 85px;
+        background-color: #161616;
+        color: #bfc2bd;
+        padding: 20px;
+    }
+    td{
+        height: 35px;
+        text-align: center;
+        vertical-align: bottom;
+    }
+    tr:hover{background-color: #a2f8b1; text-decoration: underline; color: #04133b;}

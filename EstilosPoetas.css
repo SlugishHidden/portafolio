@@ -1,0 +1,31 @@
+body{
+    background-color: #ffb1e8;
+}
+#uno{
+    background-color: #72c542;
+}
+#dos{
+    background-color: #72c542;
+}
+p{
+    
+    color: #000000;
+}
+h2{
+    font-weight: bold;
+    color: #4244c5;
+}
+
+
+
+.titulo{
+    background-color: #72c542;
+    color: #cf00c5;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+.PE{
+    color: #28994a;
+    text-align: justify;
+}
