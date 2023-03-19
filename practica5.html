@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5 Estilos - Formularios</title>
+    <link rel="stylesheet" href="EstilosP5.css">
+</head>
+<body>
+    <h1 align="center">Servicios de Internet y Telefonía</h1>
+    <h2 align="center">Contrato de servicios</h2>
+
+    <form action="" method="post" enctype="text/plain">
+            
+    <fieldset>
+    <legend><b>Datos del cliente</b></legend>
+    <table>
+        <tr>
+            <td>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre(s)" required>
+            </td>
+            <td>
+                <label for="AP">Apellido paterno</label>
+                <input type="text" name="AP" id="AP" placeholder="Apellido paterno" required>
+            </td>
+            <td>
+                <label for="AM">Apellido Materno</label><br>
+                <input type="text" name="AM" id="AM" placeholder="Apellido materno" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Ciudad">Ciudad</label><br>
+                <select name="Ciudad" id="Ciudad" size="5" multiple>
+                    <option>San Luis Potosí</option> 
+                    <option>Matehuala</option> 
+                    <option>Cd. Valles</option> 
+                    <option>Querétaro</option>    
+                    <option>Guanajuato</option> 
+                </select>
+        
+        
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>Servicio a contratar</b></legend>
+        
+        <table>
+            <tr>
+                <td><b>Selecciona el tipo de servicio a contratar</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="linea">Linea telefonica</label>
+                    <input type="checkbox" name="linea" id="linea" checked>
+                </td>
+                <td>
+                    <label for="internet">Servicio de internet</label>
+                    <input type="checkbox" name="internet" id="internet" checked>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+  
+        <fieldset>
+            <legend><b>Forma de pago</b></legend>
+
+            <table>
+                <tr>
+                    <td><b>Elige la forma de pago</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pago1">TDC:</label>
+                        <input type="radio" name="pago" id="pago1"><br>
+                        
+                        <label for="pago2">Tarjeta de Débito</label>
+                        <input type="radio" name="pago" id="pago2" checked><br>
+                        
+                        <label for="pago3">Pago en Efectivo:</label>
+                        <input type="radio" name="pago" id="pago3"><br>
+                        
+                        <label for="pago4">Pago mediante cheque:</label>
+                        <input type="radio" name="pago" id="pago4"><br>
+            
+
+                        <label for="pago5">Transferencia bancaria</label>
+                        <input type="radio" name="pago" id="pago5"><br>
+                    
+                        <label for="pago6">Deposito bancaria</label>
+                        <input type="radio" name="pago" id="pago6"><br>
+                
+                        <label for="pago7">Pago en oxxo</label>
+                        <input type="radio" name="pago" id="pago7"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Enviar Datos" name="EnviarDatos" id="Enviar"><input type="reset" value="Borrar Datos" name="reset" id="reset">
+                    </td>
+                </tr>
+            </table>
+        
+        </fieldset>
+    </form>
+
+    <h2 align="center">Práctica 5</h2>
+    <h3 align="center">HTML y CSS</h3>
+    <h3 align="center">Primavera 2023</h3>
+</body>
+</html>

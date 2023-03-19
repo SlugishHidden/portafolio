@@ -1,0 +1,22 @@
+table{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: rgb(82, 82, 82);
+}
+
+h2, h3, label, td{
+    color: rgb(221, 221, 221);
+}
+h1{
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+legend{
+    color: white;
+    font-size: 20px;
+}
