@@ -1,0 +1,78 @@
+body{
+    background-image: url(Imagen/Montana.jfif)
+    
+}
+h2{
+    font-family: 'fuente2', sans-serif;
+    text-align:right;
+    float: right;
+    position: relative;
+    border: 1px solid rgb(156, 200, 212);
+    top: 15px;
+    right: 50px;
+
+    display: block;
+    width: 300px;
+    padding: 05px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 15px auto;
+    background-color: rgb(255, 255, 255);
+
+    /*sup izq, sup der, inf izq*/
+    -moz-border-radius: (20px 10px 20px 10px);
+    -webkit-border-radius: 20px 10px 20px 10px;
+    border-radius: 20px 10px 20px 10px;
+}
+h2 :hover{
+    font-family: 'fuente2', sans-serif;
+    text-align:right;
+    float: right;
+    position: relative;
+    border: 1px solid rgb(156, 200, 212);
+    top: 15px;
+    right: 50px;
+
+    display: block;
+    width: 300px;
+    padding: 05px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 15px auto;
+    background-color: rgb(255, 255, 255);
+
+    /*sup izq, sup der, inf izq*/
+    -moz-border-radius: (20px 10px 20px 10px);
+    -webkit-border-radius: 20px 10px 20px 10px;
+    border-radius: 20px 10px 20px 10px;
+}
+h3{
+    font-family: 'fuente2', sans-serif;
+    text-align:left;
+    float: right;
+    position: absolute;
+    border: 1px solid rgb(156, 200, 212);
+    top: -15px;
+    left: 0px;
+
+    display: block;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #123471;
+    text-align: center;
+    margin: 15px auto;
+    
+    transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    background: #2ab8ca;
+
+}
+@font-face{
+    font-family: "fuente2";
+    src: url("Tipografia/Lobster-Regular.ttf") format("truetype");
+    font-family: "tabuti";
+    src: url("Tipografia/Tabuti.ttf") format("truetype");
+    font-family: "orbitron";
+    src: url("Tipografia/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
