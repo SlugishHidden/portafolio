@@ -1,0 +1,118 @@
+body{
+    background-image: url(Imagen/Montana.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: fixed;
+    
+}
+h2{
+    font-family: 'fuente2', sans-serif;
+    text-align:right;
+    float: right;
+    position: relative;
+    border: 1px solid rgb(156, 200, 212);
+    top: 15px;
+    right: 50px;
+
+    display: block;
+    width: 300px;
+    padding: 05px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 15px auto;
+    background-color: rgb(255, 255, 255);
+
+    /*sup izq, sup der, inf izq*/
+    -moz-border-radius: (20px 10px 20px 10px);
+    -webkit-border-radius: 20px 10px 20px 10px;
+    border-radius: 20px 10px 20px 10px;
+}
+h2 :hover{
+    font-family: 'fuente2', sans-serif;
+    text-align:right;
+    float: right;
+    position: absolute;
+    border: 1px solid rgb(156, 200, 212);
+    top: 15px;
+    right: 50px;
+
+    display: block;
+    width: 300px;
+    padding: 05px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 15px auto;
+    background-color: rgb(255, 255, 255);
+
+    /*sup izq, sup der, inf izq*/
+    -moz-border-radius: (20px 10px 20px 10px);
+    -webkit-border-radius: 20px 10px 20px 10px;
+    border-radius: 20px 10px 20px 10px;
+}
+
+@font-face{
+    font-family: "fuente2";
+    src: url("Tipografias/Lobster-Regular.ttf") format("truetype");
+    font-family: "tabuti";
+    src: url("Tipografia/Tabuti.ttf") format("truetype");
+    font-family: "orbitron";
+    src: url("Tipografia/Orbitron-VariableFont_wght.ttf") format("truetype");
+    font-family: "fuente3";
+    src: url(Tipografias/TiltPrism-Regular.ttf) format("truetype");
+}
+
+
+  #menu{
+    display: block;
+    border: 1px solid black;
+    width: fit-content;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 30px;
+    overflow: hidden;
+    background-color: rgb(15, 187, 10);
+    font-family: 'fuente3',sans-serif;
+    top: 40px;
+}
+#menu:hover{
+    display: block;
+    border: 1px solid black;
+    width: fit-content;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 30px;
+    overflow: visible;
+    background-color: rgb(76, 221, 71);
+    
+}
+
+#textmenu{
+    display: block;
+    border: 1px solid black;
+    margin: 0px 0px; 
+    width: 100%; 
+    padding: 8px 0px 8px 0px;
+    background-color: rgb(15, 187, 10);
+   
+}
+#txtmenu{
+  display: block;
+  border: 1px solid black;
+  margin: 0px 0px; 
+  width: 100%; 
+  padding: 8px 0px 8px 0px;
+  background-color: rgb(15, 187, 10);
+  color: #f1f1f1
+
+}
+#txtmenu:hover{
+    display: block;
+    border: 1px solid black;
+    margin: 0px 0px; 
+    width: 100%; 
+    padding: 8px 0px 8px 0px;
+    background-color: rgb(51, 167, 47);
+    font-family: 'fuente2',sans-serif;
+}
