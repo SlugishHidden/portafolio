@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcu</title>
+    <script src="calculadora.js"></script>
+    <style>
+        input{
+            width: 15%;
+            padding: 15px;
+            background-color: rgb(94, 94, 94);
+            color: #ffffff;
+            border: aqua;
+            margin-top: 12px;
+            font-size: large;
+            text-align: center;
+        }
+        
+        #resultado{
+            width: 85%;
+            padding: 15px;
+            background-color: rgb(54, 44, 2);
+            color: #ffffff;
+            border: rgb(96, 118, 118);
+            margin-top: 12px;
+            font-size: large;
+            
+        }
+        h2{
+            text-align: center;
+
+        }
+        
+    </style>
+</head>
+<body>
+
+        <label for="num1">Numero 1</label><br>
+        <input type="text" name="num1" id="num1"><br>
+    
+    
+        <label for="num2">Numero 2</label><br>
+        <input type="text" name="num2" id="num2"><br><br>
+    
+
+    
+    <div id="botones" name="botones">
+    <input type="button" name="Sumar" id="Sumar" value="Sumar" onclick="suma()">
+    <input type="button" name="Restar" id="Restar" value="Restar" onclick="resta()">
+    <input type="button" name="Multi1" id="Multi1" value="Multi" onclick="multi()">
+    <input type="button" name="division" id="division" value="Division" onclick="division()">
+    </div>
+    <h2>El resultado es:</h2>
+    <p id="resultado" name="resultado"></p>
+    
+</body>
+</html>
