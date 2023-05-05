@@ -1,0 +1,28 @@
+#rf{
+    text-align: center;
+    
+
+}
+#rfc{
+    
+        display: block;
+        width: 400px;
+        padding: 20px;
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        margin: 15px auto;
+        background-color: rgb(64, 150, 184);
+    
+        /*sup izq, sup der, inf izq*/
+        -moz-border-radius: (20px 10px 30px 40px);
+        -webkit-border-radius: 20px 10px 30px 40px;
+        border-radius: 20px 10px 30px 40px;
+
+    
+    
+    
+}
+.let{
+    width: 80%;
+    height: 40px;
+}
