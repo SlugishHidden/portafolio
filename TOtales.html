@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+    <link rel="stylesheet" href="totales.css">
+
+    <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.min.js"></script>
+    <script type="text/javascript" src="jspdf.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+    <script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+
+    <script>
+        function generar(){/*Genera un archivo PDF de la pagina web*/
+            //Definir tamaño de la letra
+            doc.setFontSize(40);
+            //Color del texto
+            doc.setTextColor(9,7,121);
+            doc.text(40,20,"Cultura General");
+            doc.setTextColor(17,122,209);
+            doc.setFontSize(30);
+            doc.text(50,35,"¿Que tanto sabes?");
+            doc.setTextColor(0,0,0);
+            doc.setFontSize(20);
+            doc.text(20,50,"25 puntos. Excelente.\r Obtuviste todas las respuestas correctas");
+            doc.text(20,70,"20 puntos. Muy Bien.\r Obtuviste cuatro respuestas correctas");
+            doc.text(20,90,"15 puntos. Regular.\r Obtuviste tres respuestas correctas");
+            doc.text(20,110,"0 puntos. Estudia más.\r Estudia");
+
+            var string = doc.output('datauristring');
+
+            $('iframe').attr('src', string);
+        }
+    </script>
+
+</head>
+<script>
+var total;
+function califica()/*Funcion que cicla las preguntas, revisando las respuestas, suma el valor de la respuesta a la variable total*/
+    {var total=0;
+    	for (var x=1;x<=5;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==25)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total==20)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+
+ 
+</script>
+
+<body>
+    <div id="contiene">
+	<h1>Cultura General</h1>
+	<h2>¿Que tanto sabes?</h2>
+<form>
+<div id="preguntas" name="preguntas">
+	
+	<ul>
+
+		<li>Nombre del pueblo por el que se llama Maratón?</li><!--Se pregunta en una lista y se selecciona la respuesta por radio, dando sólo una opción a elegir-->>
+		<input type="radio" name="r1" id="r1" value="0"/>Cairo<br/>
+		<input type="radio" name="r1" id="r1" value="5"/>Maraton<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Atenas<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Roma<br/>
+		
+		<li>Poeta mexica</li>
+		<input type="radio" name="r2" id="r2" value="5"/>Nezahualcoyotl<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Moctezuma<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Cuauhtemoc<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Namor<br/>
+
+		<li>campeon de ajedrez mundial actual</li>
+		<input type="radio" name="r3" id="r3" value="0"/>Fabiano Caruana<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Magnus Carlsen<br/>
+		<input type="radio" name="r3" id="r3" value="5"/>Ding Liren<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Ian Nepomniatchi<br/>
+
+        <li>Banda mexicana de Rock</li>
+		<input type="radio" name="r4" id="r4" value="5"/>Molotov<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>The Beatles<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>La gusana ciega<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Nafta<br/>
+        
+        <li>Marca de autos japonesa</li>
+		<input type="radio" name="r5" id="r5" value="0"/>BMW<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>Audi<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>Ford<br/>
+		<input type="radio" name="r5" id="r5" value="5"/>Nissan<br/>
+	</ul>
+	
+    <input type="button" value="Calificar" onclick="califica()"><!--Se agregan las funciones con botones-->
+    <input type="button" value="Generar PDF" onclick="generar()">
+    
+</div>
+
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
