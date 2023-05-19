@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Parcial3.css">
+<script>
+
+    function Enviar(){
+        var dr= new Date(document.getElementById("fecha").value);
+        var nom = document.getElementById(nombre).value; 
+
+        
+        
+        dt.getMonth(getElementById("fecha").value);
+        /*var dte = document.getElementById(fecha).value;*/
+        var d;
+        document.getElementById("resultado").value=dt;
+
+        
+        if(dt==2)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(dt==1)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(dt==4)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+</script>
+
+</head>
+<body>
+    
+
+    <h1>Puedes obtener producto gratis!</h1>
+
+    <label for="nombre" class="ti">Tu nombre</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre de usuario" class="nm"><br><br>
+
+    <label for="fecha" class="ti">Tu fecha de nacimiento</label>
+    <input type="date" id="fecha" name="fecha"><br><br>
+
+    <input type="button" id="submit" name="submit" value="Enviar Formulario" onclick=Enviar() class="guar">
+
+    
+
+    <p id="comentario"> </p>
+
+    <iframe frameborder="0" width="600" height="500"></iframe>
+
+</body>
+</html>
